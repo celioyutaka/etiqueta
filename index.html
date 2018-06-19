@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="UTF-8"> 
+<head>
+	<title>ETIQUETA</title>
+	<link rel="stylesheet" type="text/css" href="etiqueta.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script type="text/javascript" src="dragndrop.js"></script>
+</head>
+<body>
+	<div class="folha" id="folha"></div>
+			<div class="caixa-config" style="text-align:center; " id="div_config">
+				<h3>CONFIGURAÇÕES</h3>
+				<br>
+				<div style="overflow-y: auto; height: calc(100% - 140px); padding-right: 10px">
+
+					<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
+						<label style="font-size: 11px">Modelo de Etiqueta</label>
+						<select class="form-control" id="select_modelo" onchange="trocarModelo()">
+						</select>
+					</div>
+
+					<hr style="margin: 10px 0px 20px 0px">
+					<table style="width: 100%">
+						<tr>
+							<td></td>
+							<td style="text-align: center">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: center;">
+									<label style="font-size: 11px">Margin Top - Superior</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="pTop_folha">
+									
+								</div>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td style="text-align: center">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: center;">
+									<label style="font-size: 11px">Margin Left - Esquerda</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="pLeft_folha">
+									
+								</div>
+							</td>
+							<td style="text-align: center; padding: auto">
+								<div style="width: 2cm; height: 3cm; border: 1px solid black;background-color: white;margin: auto; vertical-align: middle;"><br><b>FOLHA</b></div>
+							</td>
+							<td style="text-align: center">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: center;">
+									<label style="font-size: 11px">Margin Right - Direita</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="pRight_folha" disabled>
+									
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="text-align: center">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: center;">
+									<label style="font-size: 11px">Margin Bottom - Inferior</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="pBottom_folha" disabled>
+									
+								</div>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td style="text-align: left">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
+									<label style="font-size: 11px">Altura</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="h_folha" >
+								</div>
+							</td>
+							<td style="text-align: left">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
+									<label style="font-size: 11px">Largura</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="w_folha">
+								</div>
+							</td>
+							<td></td>
+						</tr>
+					</table>
+
+
+					<hr style="margin: 10px 0px 20px 0px">
+
+
+					<table style="width: 100%">
+						<tr>
+							<td></td>
+							<td style="text-align: center">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: center;">
+									<label style="font-size: 11px">Margin Top - Superior</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="mTop_etiqueta">
+									
+								</div>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td style="text-align: center">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: center;">
+									<label style="font-size: 11px">Margin Left - Esquerda</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="mLeft_etiqueta">
+									
+								</div>
+							</td>
+							<td style="text-align: center; padding: auto">
+								<div style="width: 3cm; height: 0.5cm; border: 1px solid black;background-color: white;margin: 5px auto; vertical-align: middle; ">
+									<b>ETIQUETA</b>
+								</div>
+								<div style="width: 3cm; height: 0.5cm; border: 1px solid black;background-color: white;margin: 5px auto; vertical-align: middle; ">
+									<b>ETIQUETA</b>
+								</div>
+								<div style="width: 3cm; height: 0.5cm; border: 1px solid black;background-color: white;margin: 5px auto; vertical-align: middle; ">
+									<b>ETIQUETA</b>
+								</div>
+							</td>
+							<td style="text-align: center">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: center;">
+									<label style="font-size: 11px">Margin Right - Direita</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="mRight_etiqueta" disabled>
+									
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="text-align: center">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: center;">
+									<label style="font-size: 11px">Margin Bottom - Inferior</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="mBottom_etiqueta" disabled>
+									
+								</div>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td style="text-align: left">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
+									<label style="font-size: 11px">Altura</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="h_etiqueta">
+								</div>
+							</td>
+							<td style="text-align: left">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
+									<label style="font-size: 11px">Largura</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="w_etiqueta">
+								</div>
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td style="text-align: left">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
+									<label style="font-size: 11px">Colunas</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="qtd_coluna" >
+								</div>
+							</td>
+							<td style="text-align: left">
+								<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
+									<label style="font-size: 11px">Linhas</label>
+									<input class="form-control" type="text" style="" autocomplete="off" value="" id="qtd_linha" >
+								</div>
+							</td>
+							<td></td>
+						</tr>
+					</table>					
+				</div>
+				<br>
+				<center>
+					<button style="background-color: #404A61; color: #fff; border: 1px solid #404A61; margin: 1px;border-radius: 40px;padding: 10px 10px;cursor: pointer;font-weight: bold; font-size: 14px" onclick="atualizarValoresEtiqueta()">APLICAR ALTERAÇÕES</button>
+				</center>
+			</div>
+	<script type="text/javascript" src="etiqueta.js"></script>
+</body>
+
+</html>
