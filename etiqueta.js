@@ -148,9 +148,9 @@ atualizarValoresEtiqueta();
 
 /*CARREGA LISTA DE MODELOS */
 	//DIRETO DA PAGINA
-	//loadSelectModelo(lista_perfil);
+	loadSelectModelo(lista_perfil);
 	//COM REQUISIÇÃO AJAX
-	carregarPerfil();
+	//carregarPerfil();
 
 
 
