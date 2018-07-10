@@ -14,7 +14,7 @@ Etiqueta
 ![Image Preview com troca de posição](https://raw.githubusercontent.com/celioyutaka/etiqueta/master/readme/trocada.png)
 
 
-#Modelos da PIMACO encontrados no manual
+#Modelos da PIMACO (encontrados no manual)
 
 * 6089
 * 6092
