@@ -3,7 +3,7 @@ Etiqueta
 
 ## DEMO
 
-![Link DEMO](https://rawgit.com/celioyutaka/etiqueta/master/index.html)
+![Link LIVE DEMO](https://codepen.io/celioyutaka/pen/wxBdQO)
 
 ## Preview
 
