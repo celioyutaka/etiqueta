@@ -10,13 +10,13 @@ var Etiqueta = function () {
 		'pLeft_folha':'0.4cm',
 		'pRight_folha':'0cm',
 		'pTop_folha':'1.3cm',
-		'pBottom_folha':'1.2cm',
+		'pBottom_folha':'0cm',
 		'w_etiqueta':'6.67cm',
 		'h_etiqueta':'2.54cm',
 		'mTop_etiqueta':'0cm',
 		'mBottom_etiqueta':'0cm',
 		'mLeft_etiqueta':'0.35cm',
-		'mRight_etiqueta':'0.35cm',
+		'mRight_etiqueta':'0cm',
 		'qtd_coluna':'3',
 		'qtd_linha':'10',
 	};
@@ -197,15 +197,15 @@ function trocarModelo(){
 	var perfilSelecionado = document.getElementById("select_modelo").value;
 
 	document.getElementById('pLeft_folha').value = lista_perfil[perfilSelecionado].pLeft_folha;
-	document.getElementById('pRight_folha').value = lista_perfil[perfilSelecionado].pRight_folha;
+	//document.getElementById('pRight_folha').value = lista_perfil[perfilSelecionado].pRight_folha;
 	document.getElementById('pTop_folha').value = lista_perfil[perfilSelecionado].pTop_folha;
-	document.getElementById('pBottom_folha').value = lista_perfil[perfilSelecionado].pBottom_folha;
+	//document.getElementById('pBottom_folha').value = lista_perfil[perfilSelecionado].pBottom_folha;
 	document.getElementById('h_folha').value = lista_perfil[perfilSelecionado].h_folha;
 	document.getElementById('w_folha').value = lista_perfil[perfilSelecionado].w_folha;
 	document.getElementById('mLeft_etiqueta').value = lista_perfil[perfilSelecionado].mLeft_etiqueta;
-	document.getElementById('mRight_etiqueta').value = lista_perfil[perfilSelecionado].mRight_etiqueta;
+	//document.getElementById('mRight_etiqueta').value = lista_perfil[perfilSelecionado].mRight_etiqueta;
 	document.getElementById('mTop_etiqueta').value = lista_perfil[perfilSelecionado].mTop_etiqueta;
-	document.getElementById('mBottom_etiqueta').value = lista_perfil[perfilSelecionado].mBottom_etiqueta;
+	//document.getElementById('mBottom_etiqueta').value = lista_perfil[perfilSelecionado].mBottom_etiqueta;
 	document.getElementById('h_etiqueta').value = lista_perfil[perfilSelecionado].h_etiqueta;
 	document.getElementById('w_etiqueta').value = lista_perfil[perfilSelecionado].w_etiqueta;
 	document.getElementById('qtd_coluna').value = lista_perfil[perfilSelecionado].qtd_coluna;
@@ -312,3 +312,16 @@ function atualizarValoresEtiqueta(){
 }
 
 
+function adicionarCorFundo(){
+	
+	var folha = document.getElementById("folha");
+
+	if (folha.style.backgroundColor == ""){
+		folha.style.backgroundColor = "red";
+	}
+	else{
+		folha.style.backgroundColor = "";
+	}
+	
+	
+}
