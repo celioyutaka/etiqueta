@@ -1,16 +1,20 @@
 # Etiqueta
 Etiqueta
 
-#Preview
+## DEMO
+
+https://codepen.io/celioyutaka/pen/wxBdQO
+
+## Preview
 
 ![Image Preview](https://raw.githubusercontent.com/celioyutaka/etiqueta/master/readme/normal.png)
 
-#É possivel alterar a posição da etiqueta
+### Alterar a posição da etiqueta (basta clicar e arrastar)
 
 ![Image Preview com troca de posição](https://raw.githubusercontent.com/celioyutaka/etiqueta/master/readme/trocada.png)
 
 
-#Modelos da PIMACO encontrados no manual
+## Modelos da PIMACO (encontrados no manual)
 
 * 6089
 * 6092
