@@ -325,3 +325,16 @@ function adicionarCorFundo(){
 	
 	
 }
+
+function atualizarConteudo(){
+	conteudo = document.getElementById("conteudo");
+	conteudo = conteudo.value.split("\n");
+	
+	// make the conteudo like this format '{"0":"PASTEL","1":"CHURROS","2":"SONHO","3":"PIMENTA"}';
+	conteudo = JSON.stringify(conteudo);
+
+	jsonString = conteudo;
+
+	etiqueta.atualizarValores();
+
+}

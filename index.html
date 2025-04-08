@@ -17,6 +17,10 @@
 						<button style="background-color: #B93939; color: #fff; border: 1px solid #B93939; margin: 1px;border-radius: 40px;padding: 1px 10px;cursor: pointer;font-weight: bold; font-size: 12px" onclick="adicionarCorFundo()" title="Na tela de preview de impressão, a folha deve ser ocupada pelo fundo vermelho. Lembre-se de deixar sem margens!">Ativar / Desativar Cor de Fundo para ajuste de escala</button>
 					</div>
 					<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
+						<label style="font-size: 11px">Conteudo</label>
+						<textarea class="form-control" rows="5" id="conteudo" style="" onchange="atualizarConteudo()" onkeyup="atualizarConteudo()"></textarea>
+					</div>
+					<div class="form-group  col-xs-12 col-md-12" style="text-align: left;">
 						<label style="font-size: 11px">Modelo de Etiqueta</label>
 						<select class="form-control" id="select_modelo" onchange="trocarModelo()">
 						</select>
